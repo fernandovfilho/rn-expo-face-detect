@@ -1,17 +1,12 @@
-# rn-expo-tdd-training
-React Native Expo TDD with Jest snapshots.
+# rn-expo-face-detect
+React Native Expo face detection experiments.
 
 ### Install dependencies
 ```
 yarn install
 ```
 
-### Runs tests
+### Run
 ```
-yarn test
-```
-
-### Update tests
-```
-yarn test -u
+yarn start
 ```
