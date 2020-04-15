@@ -1,5 +1,5 @@
 import React from "react";
-import Intro from "../Intro";
+import Intro from "../src/pages/Intro";
 
 import renderer from "react-test-renderer";
 
