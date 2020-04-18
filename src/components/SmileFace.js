@@ -1,18 +1,18 @@
 import React from "react";
 import { Image } from "react-native";
-import faceImg from "../assets/face.png";
 
 export default function SmileFace(props) {
-  const faceSize = props.face.bounds.size.width - 35;
-  const facePositionTop = props.face.bounds.origin.y - 10;
-  const facePositionLeft = props.face.bounds.origin.x + 15;
+  const faceSize = props.face.bounds.size.width * props.sticker.resizeScale;
+  const facePositionTop = props.face.bounds.origin.y - 20;
+  const facePositionLeft = props.face.bounds.origin.x;
   let rotateY = 0;
-
-  let img = faceImg;
 
   return (
     <Image
-      source={img}
+      key={props.face.faceId}
+      source={{
+        uri: props.sticker.url,
+      }}
       resizeMethod="scale"
       style={{
         position: "absolute",
